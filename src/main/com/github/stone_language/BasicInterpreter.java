@@ -11,11 +11,11 @@ import com.github.stone_language.token.Token;
 
 public class BasicInterpreter {
 
-    public static void main(String[] args) throws ParseException {
+    public static void main(String[] args) throws Throwable {
         run(new BasicParser(), new BasicEnv());
     }
 
-    private static void run(BasicParser bp, Environment env) throws ParseException {
+    protected static void run(BasicParser bp, Environment env) throws ParseException {
         Lexer lexer = new Lexer(new CodeDialog());
         while (lexer.peek(0) != Token.EOF) {
             ASTree t = bp.parse(lexer);
