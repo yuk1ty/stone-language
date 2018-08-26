@@ -1,5 +1,7 @@
-package com.github.stone_language;
+package com.github.stone_language.interpreters;
 
+import com.github.stone_language.CodeDialog;
+import com.github.stone_language.lexer.Lexer;
 import com.github.stone_language.ast.ASTree;
 import com.github.stone_language.ast.NullStmnt;
 import com.github.stone_language.context.exception.ParseException;

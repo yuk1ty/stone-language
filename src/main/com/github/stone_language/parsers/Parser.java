@@ -1,6 +1,6 @@
 package com.github.stone_language.parsers;
 
-import com.github.stone_language.Lexer;
+import com.github.stone_language.lexer.Lexer;
 import com.github.stone_language.ast.ASTLeaf;
 import com.github.stone_language.ast.ASTList;
 import com.github.stone_language.ast.ASTree;

@@ -1,6 +1,7 @@
 package com.github.stone_language;
 
 import com.github.stone_language.context.exception.ParseException;
+import com.github.stone_language.lexer.Lexer;
 import com.github.stone_language.token.Token;
 
 public class LexerRunner {

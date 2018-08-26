@@ -1,4 +1,4 @@
-package com.github.stone_language;
+package com.github.stone_language.lexer;
 
 import com.github.stone_language.context.exception.ParseException;
 import com.github.stone_language.token.Token;

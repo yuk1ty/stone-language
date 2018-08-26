@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 import static com.github.stone_language.parsers.Parser.rule;
 
-import com.github.stone_language.Lexer;
+import com.github.stone_language.lexer.Lexer;
 import com.github.stone_language.context.exception.ParseException;
 import com.github.stone_language.parsers.Parser.Operators;
 import com.github.stone_language.ast.*;
