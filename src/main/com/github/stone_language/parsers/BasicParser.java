@@ -1,6 +1,7 @@
 package com.github.stone_language.parsers;
 
 import java.util.HashSet;
+
 import static com.github.stone_language.parsers.Parser.rule;
 
 import com.github.stone_language.Lexer;
@@ -52,6 +53,7 @@ public class BasicParser {
         operators.add("/", 4, Operators.LEFT);
         operators.add("%", 4, Operators.LEFT);
     }
+
     public ASTree parse(Lexer lexer) throws ParseException {
         return program.parse(lexer);
     }
