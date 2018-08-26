@@ -46,7 +46,7 @@ public class NestedEnv implements Environment {
        values.put(name, value);
     }
 
-    private Environment where(String name) {
+    public Environment where(String name) {
         if (values.get(name) != null) {
             return this;
         } else if (outer == null) {

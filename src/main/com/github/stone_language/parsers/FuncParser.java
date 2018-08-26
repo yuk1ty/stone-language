@@ -12,7 +12,7 @@ public class FuncParser extends BasicParser {
 
     private final Parser params = rule(ParameterList.class).ast(param).repeat(rule().sep(",").ast(param));
 
-    private final Parser paramList = rule().sep("(").maybe(params).sep(")");
+    protected final Parser paramList = rule().sep("(").maybe(params).sep(")");
 
     private final Parser def = rule(DefStmnt.class).sep("def").identifier(reserved).ast(paramList).ast(block);
 

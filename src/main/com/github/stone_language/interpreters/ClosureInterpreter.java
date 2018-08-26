@@ -1,11 +1,11 @@
 package com.github.stone_language.interpreters;
 
 import com.github.stone_language.environment.NestedEnv;
-import com.github.stone_language.parsers.FuncParser;
+import com.github.stone_language.parsers.ClosureParser;
 
-public class FuncInterpreter extends BasicInterpreter {
+public class ClosureInterpreter extends BasicInterpreter {
 
     public static void main(String[] args) throws Throwable {
-        run(new FuncParser(), new NestedEnv());
+        run(new ClosureParser(), new NestedEnv());
     }
 }
